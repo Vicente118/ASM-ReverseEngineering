@@ -1,0 +1,6 @@
+Decompile and see that :
+
+	Username = john
+	Password = the ripper
+
+Program give us the flag : 987654321
