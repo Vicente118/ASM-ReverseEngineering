@@ -8,7 +8,7 @@ bits 64
 %define SYSEXIT  60
 	
 section .data
-	message: db "Bonjour, sur GNU/LINUX", 10
+	message: db "Bonjour, sur GNU/LINUX", 10, 10
 	MSG_LEN: equ $-message
 	
 section .text
@@ -16,7 +16,7 @@ section .text
 
 _start:
 	; Loop counter
-	mov rbx, 5
+	mov rbx, 20
 	 
 
 loop_message:
