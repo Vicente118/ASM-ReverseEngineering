@@ -1,0 +1,18 @@
+RSP (Stack Pointer Register) :
+    - Used to point to the current top of the stack
+
+RBP (Base Pointer Register) :
+    - Used as a base pointer during function calls
+
+RIP (Instruction Pointer Register) :
+    - Special register used by the CPU to point to the next instruction to be executed.
+
+rFlags (Flag Registers) :
+    - rFlags is used for status and CPU control information. The rFlags register is updated
+    by the CPU after each instruction and not directly accessible by programs. This register
+    stores status information about the instruction that was just executed.
+
+Cache memory :
+    - Subset of the RAM located in the CPU chip. If a memory location is accessed, a copy
+    of the value is placed in the cache. => Much faster to access a value.
+

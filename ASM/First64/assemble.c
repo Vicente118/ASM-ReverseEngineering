@@ -32,17 +32,22 @@ int main(int argc, char **argv, char ** envp)
 		else
 			command[i] = letter[i];
 	}
+
 	command[command_size] = '\0';
+
 	const char * full_command[] = { "nasm", "-f", "elf64", command, NULL };
-	char * link = malloc(strlen(letter) + strlen(o_file) + 1);
+	char 	   * link           = malloc(strlen(letter) + strlen(o_file) + 1);
+
 	for (int i = 0; i < strlen(letter) + strlen(o_file); i++)
 	{	
 		if (i > strlen(letter) - 1)
 			link[i] = o_file[i - strlen(letter)];
 		else
 			link[i] = letter[i];
-	}	
+	}
+
 	link[strlen(letter) + strlen(o_file)] = '\0';
+
 	const char * linker[] = { "ld", link, NULL };
 	
 	pid_t pid = fork();
@@ -73,7 +78,9 @@ int main(int argc, char **argv, char ** envp)
 			fprintf(stderr, "Error nasm assembly : exit with code %d\n", exit_status);
 			exit(exit_status);
 		}
+
 		free(command);
+
 		execve( "/usr/bin/ld", (char **)linker, envp);	
 	}
 
