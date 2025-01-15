@@ -1,10 +1,9 @@
-
-
+SUCCESS equ 0
+EXIT 	equ 60
 
 section .data
     bVar  db 5                  ; byte variable
     cVar  db "H"                ; single character
-    str   db "Hello World!", 10 ; string
     dVar  dd 50000              ; 32-bits variale (4 bytes)
     array dd 100, 200, 300      ; 3 elements array
 
@@ -16,7 +15,9 @@ section .bss
 section .text
     global _start
     _start :
-      
+	mov rax, EXIT
+	mov rdi, SUCCESS
+	syscall      
 
 
 

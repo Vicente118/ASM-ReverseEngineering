@@ -1,0 +1,15 @@
+- quit
+
+- break/b <label/addr/line> : Set a breakpoint
+
+- run/r <args> 		    : execute the program to the first breakpoint
+
+- continue/c         	    : Continue execution to the next breakpoint
+
+- continue/c <n>	    : Continue execution skipping n-1 crossing of breakpoint (Can be used in a loop)
+
+- step/s		    : Step into the next instruction (Steps into function)
+
+- next/n		    : Next instruction (Steps through function)
+
+- x/<bytes> &<variable>     : Examine the content of the variable in the stack

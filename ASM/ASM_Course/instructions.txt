@@ -1,0 +1,4 @@
+- mov <dest>, <src> : Copy source operand to the destination operand.
+		
+
+

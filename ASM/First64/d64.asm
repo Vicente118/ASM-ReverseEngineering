@@ -9,7 +9,7 @@ SYSEXIT:  equ 60
 
 section .data
 	A: dq 5
-	B: dq 5
+	B: dq 6
 	
 	EQUAL_MSG: db       "A is equal to B", 10
 	EQUAL_MSG_LEN: equ   $-EQUAL_MSG
