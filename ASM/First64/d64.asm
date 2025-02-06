@@ -15,10 +15,9 @@ section .data
 	EQUAL_MSG_LEN: equ   $-EQUAL_MSG
 	UNEQUAL_MSG: db     "A is not equal to B", 10
 	UNEQUAL_MSG_LEN: equ $-UNEQUAL_MSG
- 	
-section .text
-	global _start
 
+section .text
+global _start
 _start:
 	; Place values in accumulators
 	mov rax, [A]

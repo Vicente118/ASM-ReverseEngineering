@@ -1,4 +1,10 @@
-- mov <dest>, <src> : Copy source operand to the destination operand.
+- mov <dest>,  <src> : Copy source operand to the destination operand.
 		
+- lea <reg64>, <mem> : Place address of <mem> into <reg64>
+
+- add <dest>,  <src> : <dest> += <src> (Have to be the same size in memory)
+
+
+ 
 
 
